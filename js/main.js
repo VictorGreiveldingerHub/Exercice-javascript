@@ -1,22 +1,23 @@
-// Fonction qui calcul le volume d'un cone
-function volume () {
-    
-}
-
-// Paire ou non 
-
-// Suite de fibonacci iteratif + recusrif
-
-// Trouver avec deux nombre PGCD
-
-// Renvoie tous les éléments communs d'une liste
-
-// Suite passée en parametre == palindrome ??
-
-// determiner si une adresse ip est 
-
-
 const app = {
+    // Fonction qui calcul le volume d'un cone
+    volume: function (rayon, hauteur) {
+        const aire = Math.PI * (rayon * rayon);
+        let volume = aire * (hauteur / 3);
+        
+        return volume;
+    },
+    
+    // Paire ou non 
+    
+    // Suite de fibonacci iteratif + recusrif
+    
+    // Trouver avec deux nombre PGCD
+    
+    // Renvoie tous les éléments communs d'une liste
+    
+    // Suite passée en parametre == palindrome ??
+    
+    // determiner si une adresse ip est 
     
     brutForce: function (paragraphe) {
         
@@ -29,8 +30,12 @@ const app = {
       
       // Remplace une lettre par une autre
       for (let i = 0; i <= (alphabetics.length - 1); i++) {
-        console.log(alphabetics[i]);
-        chars[0].replace(alphabetics[0]);
+        // console.log(alphabetics[i]); // => a , b etc ...
+        
+        alphabetics[i].replace(chars[i]);
+        // console.log(chars);
+        // console.log(alphabetics)
+        // chars[i].replace(alphabetics[i]);
         console.log(chars);
       }
       
@@ -39,6 +44,7 @@ const app = {
     
     init: function () {
       app.brutForce('hello');
+      console.log(app.volume(3, 5));
     }
   
   }
