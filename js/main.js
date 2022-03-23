@@ -37,6 +37,28 @@ const app = {
     // Renvoie tous les éléments communs d'une liste
     
     // Suite passée en parametre == palindrome ??
+    palindrome: function (suite) {
+        // let suiteTab = suite.split('');
+        
+        // let reverseSuiteTab = suite.split('').reverse();
+        // console.log(suiteTab);
+        // console.log(reverseSuiteTab);
+        // if (suiteTab == reverseSuiteTab) {
+        //     return true
+        // } else {
+        //     return false;
+        // }
+        
+        let suiteTab = suite.split('');
+        for(let i = 0; i <= suite.length; i++){
+            if (suiteTab[i] != suiteTab[suite.length - 1 - i]){
+                return false;
+            } else {
+                return true;
+            }
+        }
+    },
+    
     
     // determiner si une adresse ip est 
     
@@ -64,10 +86,12 @@ const app = {
     },
     
     init: function () {
-      app.brutForce('hello');
+      // app.brutForce('hello');
       console.log(app.volume(3, 5));
       console.log(app.isPair(100)); // return true / false
-      console.log(app.fibonacci(100));
+      app.fibonacci(100);
+      console.log(app.palindrome('kayak')); // => true
+      console.log(app.palindrome('azerouete')); // => false
     }
   }
 
