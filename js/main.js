@@ -34,6 +34,8 @@ const app = {
     
     // Trouver avec deux nombre PGCD
     
+    
+    
     // Renvoie tous les éléments communs d'une liste
     
     // Suite passée en parametre == palindrome ??
@@ -60,7 +62,7 @@ const app = {
     },
     
     
-    // determiner si une adresse ip est 
+    // determiner si une adresse ip est ??
     
     brutForce: function (paragraphe) {
         
