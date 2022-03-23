@@ -8,6 +8,11 @@ const app = {
     },
     
     // Paire ou non 
+    isPair: function (nombre) {
+        if(nombre % 2 === 0) {
+            return true;
+        }
+    },
     
     // Suite de fibonacci iteratif + recusrif
     
@@ -46,8 +51,7 @@ const app = {
       app.brutForce('hello');
       console.log(app.volume(3, 5));
     }
-  
   }
-  
-  // Lorsque la page est totalement chargée, on lance la fonction app.init
-   document.addEventListener('DOMContentLoaded', app.init);
+
+// Lorsque la page est totalement chargée, on lance la fonction app.init
+document.addEventListener('DOMContentLoaded', app.init);
