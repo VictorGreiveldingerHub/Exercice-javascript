@@ -15,6 +15,22 @@ const app = {
     },
     
     // Suite de fibonacci iteratif + recusrif
+    fibonacci: function (repetition) {
+        
+        // stocker dans un tableau
+        const suite = [];
+        
+        // Ajout des deux premiers chiffre
+        suite.push(0);
+        suite.push(1);
+        
+        for(let i = 2; i < repetition; i++) {
+            suite[i] = suite[i - 2] + suite[i - 1];
+        }
+        
+        console.log(suite);
+    },
+    
     
     // Trouver avec deux nombre PGCD
     
@@ -50,6 +66,8 @@ const app = {
     init: function () {
       app.brutForce('hello');
       console.log(app.volume(3, 5));
+      console.log(app.isPair(100)); // return true / false
+      console.log(app.fibonacci(100));
     }
   }
 
